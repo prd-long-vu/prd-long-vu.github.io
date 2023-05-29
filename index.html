@@ -26,11 +26,14 @@
         <td>Candidate Care</td>
       </tr>
     </table>
+    
+    <div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
     <script type='text/javascript'>
         (function(o,l) {
             window.oliviaChatData = window.oliviaChatData || [];
             window.oliviaChatBaseUrl = o;
             window.oliviaChatData.push(['setKey', l]);
+            window.oliviaChatData.push(['setParent', 'my-chat-widget']);
             window.oliviaChatData.push(['start']);
             var apply = document.createElement('script');
             apply.type = 'text/javascript';
@@ -38,7 +41,8 @@
             apply.src = 'https://d25zu39ynyitwy.cloudfront.net/static/site/js/widget-client.js';
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(apply, s);
-        })('https://stg.paradox.ai', 'ddcjzczsowtyqjtvnyzh');
+        })('https://stg.paradox.ai', 'cutbncqgzbpemqbulxtk');
     </script>
+    
   </body>
 </html>
